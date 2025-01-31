@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem.Android;
 using UnityEngine.UI;
@@ -41,6 +42,8 @@ public class Interact : MonoBehaviour
     {
         if (inReach && Input.GetKeyDown(KeyCode.E) && !keepingTrackOfParts.holding)
         {
+
+            Debug.Log("DESTROY THYSELF!");
 
             keepingTrackOfParts.holding = true;
 
