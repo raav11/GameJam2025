@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem.Android;
 using UnityEngine.UI;
 using UnityEngine.WSA;
 
@@ -7,13 +8,13 @@ public class Interact : MonoBehaviour
 
     private bool inReach;
 
-    private GameObject cameraObject;
+    private KeepingTrackOfParts keepingTrackOfParts;
 
 
     void Awake()
     {
 
-        //cameraObject = gameObject.GetComponent<Text>();
+        keepingTrackOfParts = GameObject.Find("Player").GetComponent<KeepingTrackOfParts>();
 
 
     }
@@ -40,6 +41,8 @@ public class Interact : MonoBehaviour
     {
         if (inReach && Input.GetKeyDown(KeyCode.E))
         {
+
+            keepingTrackOfParts.counter += 1f;
 
             Destroy(gameObject);
         }
