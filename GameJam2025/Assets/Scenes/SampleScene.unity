@@ -16,8 +16,8 @@ RenderSettings:
   serializedVersion: 10
   m_Fog: 1
   m_FogColor: {r: 0.03184763, g: 0.03806987, b: 0.23773581, a: 1}
-  m_FogMode: 3
-  m_FogDensity: 0.3
+  m_FogMode: 2
+  m_FogDensity: 0.1
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -474,7 +474,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 10
+  far clip plane: 50
   field of view: 75
   orthographic: 0
   orthographic size: 5
@@ -1487,7 +1487,7 @@ MonoBehaviour:
   _VertexGridResolution: 75
   _VertexWobbleMode: 0
   _UseRetroVertexLighting: 1
-  _RetroLightingNormalFactor: 0.5
+  _RetroLightingNormalFactor: 0.299
   _RetroLightFalloffStart: 0.75
   _FlatShadingMode: 0
   _TriangleSortMode: 0
