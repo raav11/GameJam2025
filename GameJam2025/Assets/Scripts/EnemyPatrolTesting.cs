@@ -13,6 +13,7 @@ public class PatrollingEnemy : MonoBehaviour {
     [SerializeField] private float MAXwanderRange;
     private NavMeshAgent agent;
     [SerializeField] float DswitchCounter;
+	private Transform playerTransform;
     
    
 
@@ -50,8 +51,25 @@ public class PatrollingEnemy : MonoBehaviour {
 	}
     void Update() 
     {
+		 if (playerTransform != null)
+        {
+            agent.SetDestination(playerTransform.position);
+        }
        
-      
-        Debug.Log(DswitchCounter);
+        
     }
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Player"))
+		{
+			Debug.Log("EYAYEAJEHAWKJEHAWU");
+			GameObject player = GameObject.FindGameObjectWithTag("Player");
+			
+			
+			if (player != null)
+        {
+            playerTransform = player.transform;
+        }
+		}
+	}
 }
