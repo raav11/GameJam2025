@@ -1,9 +1,7 @@
+using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.InputSystem.Android;
-using UnityEngine.UI;
-using UnityEngine.WSA;
 
-public class Interact : MonoBehaviour
+public class BaseTracking : MonoBehaviour
 {
 
     private bool inReach;
@@ -24,7 +22,7 @@ public class Interact : MonoBehaviour
         if (other.gameObject.tag == "Reach")
         {
             inReach = true;
-            
+
         }
     }
 
@@ -33,18 +31,28 @@ public class Interact : MonoBehaviour
         if (other.gameObject.tag == "Reach")
         {
             inReach = false;
-            
+
         }
     }
 
+   
     void Update()
     {
-        if (inReach && Input.GetKeyDown(KeyCode.E) && !keepingTrackOfParts.holding)
+
+            if (inReach && Input.GetKeyDown(KeyCode.E) && keepingTrackOfParts.holding)
+            {
+
+            keepingTrackOfParts.counter++;
+            keepingTrackOfParts.holding = false;
+
+            Debug.Log("look!" + keepingTrackOfParts.counter + "The amount of parts you have!");
+
+
+        }
+
+            if (keepingTrackOfParts.counter >= 5)
         {
-
-            keepingTrackOfParts.holding = true;
-
-            Destroy(gameObject);
+            Debug.Log("Thou has woneth!");
         }
 
     }
