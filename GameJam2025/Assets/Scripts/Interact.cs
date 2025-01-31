@@ -7,13 +7,13 @@ public class Interact : MonoBehaviour
 
     private bool inReach;
 
-    private InteractableGateWay interactableGateWay;
+    private GameObject cameraObject;
 
 
     void Awake()
     {
 
-        //interactableGateWay = GetComponent<InteractableGateWay>();
+        //cameraObject = gameObject.GetComponent<Text>();
 
 
     }
@@ -41,7 +41,7 @@ public class Interact : MonoBehaviour
         if (inReach && Input.GetKeyDown(KeyCode.E))
         {
 
-            //TestingPurposes();            
+            Destroy(gameObject);
         }
 
     }
