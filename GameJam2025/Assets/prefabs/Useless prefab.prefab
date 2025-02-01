@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7622781836466806344}
   - component: {fileID: 3760309019859914563}
   m_Layer: 0
-  m_Name: TestTerrain
+  m_Name: Useless prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
