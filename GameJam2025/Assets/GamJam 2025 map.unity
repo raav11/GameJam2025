@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.024200775, g: 0.07693703, b: 0.12452829, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.05
@@ -377,7 +377,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -258.956, y: -30, z: 0}
---- !u!1001 &1891688618109774908
+--- !u!1001 &4579975209030243925
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -385,71 +385,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1464565499437009415, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
-      propertyPath: m_TerrainData
-      value: 
-      objectReference: {fileID: 15600000, guid: 1c9f4658457e42a4ea375ec60023feb3, type: 2}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4300359791168736759, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 5013457177963062052, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5029926958377040536, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
-      propertyPath: m_TerrainData
-      value: 
-      objectReference: {fileID: 15600000, guid: 1c9f4658457e42a4ea375ec60023feb3, type: 2}
-    - target: {fileID: 5029926958377040536, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
-      propertyPath: m_MaterialTemplate
-      value: 
-      objectReference: {fileID: 2100000, guid: 342787c5188c1494ca283d7e420d150d, type: 2}
-    - target: {fileID: 5499712102097760426, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+    - target: {fileID: 7837682668679489953, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
       propertyPath: m_Name
-      value: Terrain
+      value: TestTerrain
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc3802f5292deea46b2506e35df60b1c, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 0abfa3cc482eb094bbf1c18053e1fab8, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 26476499}
   - {fileID: 821948434}
-  - {fileID: 1891688618109774908}
+  - {fileID: 4579975209030243925}
