@@ -731,6 +731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9882fad8de8491e44981a2472f5a5223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 0}
   wanderSpeed: 5
   MINwanderRange: -10
   MAXwanderRange: 10
@@ -1657,6 +1658,8 @@ MonoBehaviour:
   defaultHeight: 2
   crouchHeight: 1
   crouchSpeed: 2
+  source: {fileID: 0}
+  clips: []
 --- !u!143 &1126352223
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1747,6 +1750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spotLight: {fileID: 1498495271}
+  timer: 0
 --- !u!65 &1126352228
 BoxCollider:
   m_ObjectHideFlags: 0
