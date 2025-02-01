@@ -79,4 +79,14 @@ public class PatrollingEnemy : MonoBehaviour {
         }
 		}
 	}
+	void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Player")) 
+		{
+			Wander();
+			playerTransform = null;
+
+		}
+
+	}
 }
