@@ -20,6 +20,7 @@ public class OxygenRefill : MonoBehaviour
         {
             Oxygen = collision.gameObject.GetComponent<Healthbar>();
             Oxygen.RestoreHealth(20);
+            Debug.Log("TYEAYEUEGAKJEWUIEHAWHGEWJGVEAW");
         }
     }
 }
