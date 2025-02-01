@@ -3,6 +3,8 @@ using System.Collections;
 using UnityEngine.AI;
 
 public class PatrollingEnemy : MonoBehaviour {
+	 [SerializeField] private AudioClip sound;
+    private AudioSource audioSource;
 
 	private Vector3 startPosition;  //Give it a startPosition so it knows where it's 'home' location is.
 	private bool wandering = true;  //Set a bool or state so it knows if it's wandering or chasing a player
@@ -62,9 +64,14 @@ public class PatrollingEnemy : MonoBehaviour {
 	{
 		if (other.CompareTag("Player"))
 		{
-			Debug.Log("EYAYEAJEHAWKJEHAWU");
-			GameObject player = GameObject.FindGameObjectWithTag("Player");
 			
+			GameObject player = GameObject.FindGameObjectWithTag("Player");
+			audioSource = gameObject.AddComponent<AudioSource>(); // Add an AudioSource component
+            audioSource.clip = sound;
+            Debug.Log("SOUND WORKS YDEEHEHEHEHEH");
+            
+           
+            audioSource.Play(); // Play the ambience sound
 			
 			if (player != null)
         {
