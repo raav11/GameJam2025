@@ -1825,6 +1825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spotLight: {fileID: 1498495271}
   timer: 0
+<<<<<<< HEAD
 --- !u!65 &1126352228
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1847,6 +1848,8 @@ BoxCollider:
   m_Size: {x: 1, y: 1, z: 1.0645142}
   m_Center: {x: 0, y: 0, z: -0.008178711}
 >>>>>>> 136907ca02a8287aca2ca44944b17f6ad1ca3f15
+=======
+>>>>>>> c490ea2f469f280d32fde418b03ad55246824afb
 --- !u!1 &1220365993
 GameObject:
   m_ObjectHideFlags: 0
