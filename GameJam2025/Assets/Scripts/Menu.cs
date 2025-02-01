@@ -16,6 +16,6 @@ public class Menu : MonoBehaviour
     }
     public void GoToGame()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("DoNotWorkOnHere");
     }
 }
