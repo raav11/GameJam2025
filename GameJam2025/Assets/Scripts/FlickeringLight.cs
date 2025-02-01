@@ -21,7 +21,7 @@ public class FlickeringLight : MonoBehaviour
 
         if (timer >= 10)
         {
-            spotLight.enabled = false;
+            //spotLight.enabled = false;
         }
         
     }
