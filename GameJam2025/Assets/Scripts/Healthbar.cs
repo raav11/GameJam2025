@@ -34,7 +34,7 @@ public class Healthbar : MonoBehaviour
         if (currentHealth <= 0)
         {
 
-             SceneManager.LoadScene("DeathScreen");
+            Application.Quit();
         }
     }
 

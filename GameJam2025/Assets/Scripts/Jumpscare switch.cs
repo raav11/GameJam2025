@@ -28,7 +28,7 @@ public class Jumpscareswitch : MonoBehaviour
         {
             Debug.Log("Second");
             switchCounter = 0;
-            SceneManager.LoadScene("DeathScreen");
+            Application.Quit();
         }
         
     }
