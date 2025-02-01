@@ -14,12 +14,13 @@ public class OxygenRefill : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            Oxygen = collision.gameObject.GetComponent<Healthbar>();
+            Oxygen = other.gameObject.GetComponent<Healthbar>();
             Oxygen.RestoreHealth(20);
+            
         }
     }
 }
