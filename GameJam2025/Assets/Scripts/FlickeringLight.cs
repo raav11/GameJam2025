@@ -6,7 +6,7 @@ public class FlickeringLight : MonoBehaviour
 
     [SerializeField] Light spotLight;
 
-    private float timer;
+    public float timer;
     void Start()
     {
 
@@ -21,8 +21,21 @@ public class FlickeringLight : MonoBehaviour
 
         if (timer >= 10)
         {
-            //spotLight.enabled = false;
+            spotLight.enabled = false;
+
+            if (timer >= 10.2) 
+            {
+
+                timer = 0;
+
+            }
+
+            return;
         }
+
+
+        spotLight.enabled = true;
+        
         
     }
 }
