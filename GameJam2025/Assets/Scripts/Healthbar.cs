@@ -7,10 +7,26 @@ public class Healthbar : MonoBehaviour
     public float currentHealth;
     public Image healthbarFill;
 
+    private float drain = 0f;
+
     private void Update()
     {
 
-        currentHealth -= 0.006f;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+
+            drain = 0.02f;
+
+        }
+
+        else
+        {
+
+            drain = 0.002f;
+
+        }
+
+        currentHealth -= drain;
 
         UpdateHealthBar();
 
