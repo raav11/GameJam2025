@@ -4,6 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
@@ -14,5 +15,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: c63dd719d2302fe409a9ff48bdddc6cb
+=======
+<<<<<<< HEAD
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainGame.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+=======
+  m_Scenes: []
+>>>>>>> fb14906557d6d55c42f559797d90e12a53bd2624
   m_configObjects: {}
+>>>>>>> 136907ca02a8287aca2ca44944b17f6ad1ca3f15
   m_UseUCBPForAssetBundles: 0
