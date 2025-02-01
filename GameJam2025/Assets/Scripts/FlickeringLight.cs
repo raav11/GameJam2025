@@ -26,7 +26,7 @@ public class FlickeringLight : MonoBehaviour
             if (timer >= 10.2) 
             {
 
-                timer = 0;
+                timer = 1;
 
             }
 
