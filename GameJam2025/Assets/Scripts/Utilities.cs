@@ -10,6 +10,6 @@ public class Utilities : MonoBehaviour
     }
     public void GoToGame()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("DoNotWorkOnHere");
     }
 }
