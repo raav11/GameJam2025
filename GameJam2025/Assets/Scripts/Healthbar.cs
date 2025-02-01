@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Healthbar : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class Healthbar : MonoBehaviour
         if (currentHealth <= 0)
         {
 
-            Debug.Log("Ded lmao");
+             SceneManager.LoadScene("DeathScreen");
         }
     }
 
