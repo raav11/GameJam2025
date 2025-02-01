@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float defaultHeight = 2f;
     [SerializeField] float crouchHeight = 1f;
     [SerializeField] float crouchSpeed = 2f;
+    private float speed = 1f;
 
     [SerializeField] private AudioSource source;
     [SerializeField] private AudioClip[] clips;
@@ -73,6 +74,7 @@ public class PlayerMovement : MonoBehaviour
             characterController.height = defaultHeight;
             walkSpeed = 3f;
             runSpeed = 5f;
+
         }
 
         characterController.Move(moveDirection * Time.deltaTime);
@@ -85,15 +87,27 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+
+            speed = 0.5f;
+
+        }
+
+        else
+        {
+
+            speed = 1f;
+
+        }
+
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
 
             cooldown += Time.deltaTime;
 
-            if (cooldown >= 1)
+            if (cooldown >= speed)
             {
-
-                Debug.Log("DID YOU GET A WHOOPAAA");
 
                 int clip = Random.Range(0, clips.Length);
                 source.PlayOneShot(clips[clip]);
@@ -103,5 +117,7 @@ public class PlayerMovement : MonoBehaviour
             }
 
         }
+
+
     }
 }
