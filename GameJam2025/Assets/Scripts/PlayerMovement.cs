@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     private bool canMove = true;
 
+    private float cooldown = 0;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -34,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);
 
@@ -81,10 +85,22 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
         }
 
-        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
         {
 
+            cooldown += Time.deltaTime;
 
+            if (cooldown >= 1)
+            {
+
+                Debug.Log("DID YOU GET A WHOOPAAA");
+
+                int clip = Random.Range(0, clips.Length);
+                source.PlayOneShot(clips[clip]);
+
+                cooldown = 0;
+
+            }
 
         }
     }
