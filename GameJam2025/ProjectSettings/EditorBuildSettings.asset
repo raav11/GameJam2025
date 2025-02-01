@@ -7,6 +7,7 @@ EditorBuildSettings:
 <<<<<<< HEAD
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/MainMenu.unity
     guid: 70977f54dc88e8d42b855133689b678e
   - enabled: 1
@@ -19,6 +20,8 @@ EditorBuildSettings:
 <<<<<<< HEAD
   m_Scenes:
   - enabled: 1
+=======
+>>>>>>> parent of e0c7a72 (jg)
     path: Assets/Scenes/MainGame.unity
     guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
