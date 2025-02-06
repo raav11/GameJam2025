@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DoNotWorkOnHere.unity
     guid: 12158c309aaa85b4890d7d8f98e6af4a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DeathScreen.unity
     guid: c63dd719d2302fe409a9ff48bdddc6cb
   - enabled: 1
